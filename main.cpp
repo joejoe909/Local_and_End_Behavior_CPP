@@ -17,8 +17,19 @@ int main()
 
     for(int i = 0; i < nAE; i++)
     {
+        cout << in[i] << "\t" << fx(in[i]) << "\t" << ((fx(in[i]))) <<endl;
+
         cout << in[i] << "\t" << fx(in[i]) << "\t" << (-1 * (fx(in[i]))) <<endl;
     }
+
+cout << endl << endl;
+ cout << " 1/x^2 " << endl;
+    for(int i = 0; i < nAE; i++)
+    {
+
+        cout << in[i] << "\t" << fx(pow(in[i], 2)) << "\t" << -1 * fx(pow(in[i], 2)) <<endl;
+    }
+
 
     return 0;
 }
